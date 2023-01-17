@@ -1,0 +1,144 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-section
+{
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-div
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side-contact
+{
+    background: rgb(24, 125, 219);
+}
+
+.left-side-contact h3
+{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-contact-div
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form
+{
+    width: 80%;
+    height: 100%;
+}
+
+.form-contact-div label
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.form-contact-div input
+{
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+textarea
+{
+    width: 100%;
+    border: 1px solid black;
+    height: 25%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.all-button-btn-atag
+{
+    position: relative;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button-submit
+{
+    height: 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-meet-div
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-side-contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.meet-button
+{
+    color: white;
+    text-decoration: none;
+    padding: 1% 4%;
+    background-color: crimson;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 5px crimson;
+    border-radius: 5px;
+}
+
+.meet-button:hover
+{
+    background-color: white;
+    color: crimson;
+}

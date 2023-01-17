@@ -1,0 +1,32 @@
+.html:hover
+{
+    animation: .5s left-html alternate infinite ease-in-out;
+}
+
+@keyframes left-html
+{
+    0%
+    {
+        transform: translateY(0%);
+    }
+    100%
+    {
+        transform: translateY(8%);
+    }
+}
+.css:hover
+{
+    animation: .5s right-html alternate infinite ease-in-out;
+}
+
+@keyframes right-html
+{
+    0%
+    {
+        transform: translateY(8%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+    }
+}

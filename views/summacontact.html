@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/styles/nav.css">
+    <link rel="stylesheet" href="../public/styles/footer.css">
+    <link rel="stylesheet" href="../public/styles/contact.css">
+    <title>Contact | DigitranIT</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_ShHGwRjiFyvUIVMufDId9");
+        })();
+    </script>
+    <script src="../public/script/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="../index.html"><img src="../public/images/logos/logo.jpg" alt="" /></a>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="./main-page.html">Home</a></li>
+                    <li><a class="about" href="./about.html">About</a></li>
+                    <li class="services"><a href="./service.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </div>
+            </ul>
+            <ul class="ul-social-icons">
+                <li>
+                    <a class="button-social-media" href="https://www.facebook.com/profile.php?id=100072822087652"
+                        target="_blank">
+                        <div class="social-icons-atag social-icons-atag-facebook"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="button-social-media"
+                        href="https://www.linkedin.com/in/digitranit-software-solutions-private-limited-a11783221"
+                        target="_blank">
+                        <div class="social-icons-atag social-icons-atag-linkedin"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contact-section">
+        <div class="side-main-div">
+            <div class="side-div-contact left-div-contact">
+                <div class="yellow-background"></div>
+                <div class="second-left-div-contact">
+                    <!-- <div class="second-left-main-div">
+                        <img
+                            src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/50/000000/external-phone-essentials-icongeek26-linear-colour-icongeek26.png" />
+                        <p>+91-9888888888</p>
+                    </div>
+                    <div class="second-left-main-div">
+                        <img src="https://img.icons8.com/color/48/000000/address--v1.png" />
+                        <p>Sarathy Nagar, <br>Kundrathur, <br>Chennai - 600069</p>
+                        </p>
+                    </div> -->
+                    <div class="second-left-main-div">
+                        <a href="" class="glow-on-hover-atag"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prasanna0200'});return false;">Schedule
+                            time with me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="side-div-contact right-div-contact">
+                <div class="right-div-contact-form-div">
+                    <form action="">
+                        <h1>Contact Us</h1>
+                        <p>Feel free to contact us anytime <br>We will get back to you, as soon as we can</p>
+                        <div class="right-side-input-div">
+                            <input type="text" id="fullName" placeholder="Enter your Name">
+                            <input type="email" placeholder="Enter your Email">
+                            <textarea name="textarea" id="textarea" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button class="glow-on-hover" onclick='sendMail()'>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <h1>Header</h1>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-networks">
+                <h1>Contact us through</h1>
+                <ul class="footer-social-ul">
+                    <li><a href=""><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a></li>
+                    <li><a href=""><img src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a></li>
+                    <li><a href=""><img src="https://img.icons8.com/fluency/48/000000/linkedin.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../public/script/nav.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+
+</html>

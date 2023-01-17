@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first-section-services {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-parent-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-main-div-services {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/img/we-are-your-ally.png") right/cover no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  color: white;
+  padding: 3%;
+  font-size: 1.2rem;
+}
+.left-main-div-services::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: -10%;
+  width: 4rem;
+  height: 4rem;
+  background: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.left-main-div-services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.1);
+}
+.right-main-div-services {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-block {
+  width: 90%;
+  height: 18rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.service-block h3 {
+  margin: 3%;
+}
+
+.first-service-block {
+  background: rgba(197, 26, 26, 0.3);
+}
+.second-service-block {
+  background: rgba(43, 26, 197, 0.3);
+}
+.third-service-block {
+  background: rgba(26, 197, 35, 0.3);
+}
+.forth-service-block {
+  background: rgba(160, 197, 26, 0.3);
+}
+.fifth-service-block {
+  background: rgba(197, 26, 189, 0.3);
+}
+.sixth-service-block {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.left-services {
+  position: relative;
+  height: fit-content;
+  background: rgb(255, 255, 255);
+  color: black;
+  padding: 5%;
+  border-radius: 10px;
+  animation: .5s identifier ease-in-out ;
+}
+
+
+
+@keyframes identifier {
+  0%
+  {
+    transform: translateY(30px);
+  }
+  100%
+  {
+    transform: translateY(0px);
+  }
+}

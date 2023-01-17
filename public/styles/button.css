@@ -1,0 +1,41 @@
+/* <div class="button-atag">
+    <span class="circle-span"></span>
+    <a class="atag-button-atag" href="/">Have a look at how we create value to our clients</a>
+</div> */
+
+.button-atag {
+  position: relative;
+  height: 3rem;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  z-index: 2;
+}
+
+.button-atag a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  z-index: 3;
+}
+
+.circle-span {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  border: 2px white solid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  z-index: 2;
+}
+.button-atag:hover .circle-span {
+  width: 92%;
+}
